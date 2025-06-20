@@ -1,0 +1,35 @@
+// -*- mode: jsonc -*-
+{
+    "spacing": 5,
+    "position": "bottom",
+    "modules-left": [ "niri/workspaces" ],
+    "modules-center": [ "niri/window" ],
+    "modules-right": [ "custom/media" ],
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": "" 
+        },
+    },
+    "niri/window": {
+	"format": "{title}",
+	"max-length": 30
+    },
+    "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 50,
+        "format-icons": {
+            "spotify": "",
+            "firefox": "",
+            "vlc": "󰕼",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause",
+        "on-double-click": "playerctl next",
+        "on-triple-click": "playerctl previous"
+    }
+}

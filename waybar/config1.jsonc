@@ -1,0 +1,91 @@
+// -*- mode: jsonc -*-
+{
+    "spacing": 5,
+    "modules-left": [
+        "custom/distro",
+        "clock",
+        "cpu",
+        "memory",
+        "temperature",
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "backlight",
+        "battery"
+    ],
+    "tray": {
+        "icon-size": 14,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%I:%M:%S %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%m/%d/%Y}",
+        "interval": 1,
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+    },
+    "memory": {
+        "format": "{}%  "
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", "󰈸"],
+        "tooltip": false
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip": false
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon} ",
+        "format-full": "{capacity}% {icon} ",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon} ",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-muted": "󰝟 {format_source}",
+        "format-source": " {volume}% ",
+        "format-source-muted": "  ",
+        "format-icons": {
+            "headphone": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/distro": {
+        "format" : "",
+        "class": "custom-distro",
+		"tooltip": false,
+        "menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/powerMenu.xml",
+		"menu-actions": {
+			"shutdown": "shutdown now",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend",
+            "lock": "swaylock -f -i $HOME/.config/pictures/bsod.png",
+            "logout": "niri msg action quit"
+	}
+    }
+}
