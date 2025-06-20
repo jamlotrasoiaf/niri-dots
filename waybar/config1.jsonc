@@ -84,7 +84,7 @@
 			"shutdown": "shutdown now",
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
-            "lock": "swaylock -f -i $HOME/.config/pictures/bsod.png",
+            "lock": "swaylock",
             "logout": "niri msg action quit"
 	}
     }

@@ -5,7 +5,7 @@ nautilus/
 nwg-look/
 qt5ct/
 qt6ct/
-systemd/
+systemd/user/niri.service.wants
 user-dirs.dirs
 user-dirs.locale
 xsettingsd/

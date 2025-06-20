@@ -1,0 +1,17 @@
+daemonize
+ignore-empty-password
+image=$HOME/.config/pictures/bsod.png
+bs-hl-color=11111B
+font=Hack Nerd Font
+font-size=14
+inside-color=1E1E2E
+inside-clear-color=F9E2AF
+inside-caps-lock-color=F2CDCD
+inside-ver-color=74C7EC
+inside-wrong-color=EBA0AC
+line-uses-ring
+ring-color=181825
+ring-clear-color=FAB387
+ring-caps-lock-color=F5C2E7
+ring-ver-color=89B4FA
+ring-wrong-color=F38BA8
