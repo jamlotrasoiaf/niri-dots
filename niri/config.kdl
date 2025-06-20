@@ -259,7 +259,7 @@ layout {
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "$HOME/.config/waybar/start.sh"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "xwayland-satellite" ":12" "&"
+spawn-at-startup "sh" "-c" "xwayland-satellite :12 &"
 
 prefer-no-csd
 
