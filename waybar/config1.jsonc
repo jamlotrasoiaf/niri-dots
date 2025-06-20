@@ -75,7 +75,7 @@
         "on-click": "pavucontrol"
     },
     "custom/distro": {
-        "format" : "",
+        "format" : " Arch btw",
         "class": "custom-distro",
 		"tooltip": false,
         "menu": "on-click",

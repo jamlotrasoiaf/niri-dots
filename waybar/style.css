@@ -1,3 +1,5 @@
+@import "mocha.css";
+
 * {
     padding: 2px;
     border-radius: 8px;
@@ -8,28 +10,20 @@
 
 window#waybar {
     background-color: rgba(0, 0, 0, 0);
-    color: #cdd6f4;
+    color: @text;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
 }
 
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
-
 tooltip {
-    border: 3px solid #f5c2e7;
+    border: 3px solid @blue;
+    background-color: @base;
 }
 
 #workspaces {
-    border: 3px solid #b4befe;
+    border: 3px solid @blue;
 }
 
 #workspaces button {
@@ -38,23 +32,23 @@ tooltip {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: transparent;
-    color: #cdd6f4;
+    color: @subtext0;
 }
 
 #workspaces button:hover {
-    color: #f5c2e7;
+    color: @subtext1;
 }
 
 #workspaces button.empty {
-    color: #7f849c;
+    color: @overlay1;
 }
 
 #workspaces button.active {
-    color: #f5c2e7;
+    color: @text;
 }
 
 #workspaces button.urgent {
-    color: #f38ba8;
+    color: @red;
 }
 
 #window,
@@ -72,100 +66,72 @@ tooltip {
 #tray,
 #workspaces {
     padding: 0 10px;
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: @base;
+    color: @text;
     opacity: 1;
 }
 
 #clock {
-    border: 3px solid #89dceb;
+    border: 3px solid @yellow;
 }
 
 #custom-distro {
-    border: 3px solid #f5c2e7;
+    border: 3px solid @green;
     padding-right: 13px;
 }
 
 #window {
-    border: 3px solid #9399b2;
+    border: 3px solid @sapphire;
 }
 
 #battery {
-    border: 3px solid #b4befe;
-}
-
-#battery.charging, #battery.plugged {
-    border: 3px solid #a6e3a1;
-}
-
-@keyframes blink {
-    to {
-        border: 3px solid #b4befe;
-    }
-}
-
-/* Using steps() instead of linear as a timing function to limit cpu usage */
-#battery.critical:not(.charging) {
-    border: 3px solid #f38ba8;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#power-profiles-daemon {
-    padding-right: 18px;
+    border: 3px solid @rosewater;
 }
 
 #cpu {
-    border: 3px solid #a6e3a1;
+    border: 3px solid @peach;
     padding-right: 15px
 }
 
 #memory {
-    border: 3px solid #cba6f7
+    border: 3px solid @maroon;
 }
 
 #backlight {
-    border: 3px solid #f9e2af;
+    border: 3px solid @flamingo;
 }
 
 #pulseaudio {
-    border: 3px solid #cba6f7;
-}
-
-#pulseaudio.muted {
-    border: 3px solid #f38ba8;
+    border: 3px solid @pink;
 }
 
 #custom-media {
-    border: 3px solid #a6e3a1;
+    border: 3px solid @sky;
     min-width: 100px;
 }
 
+#custom-media.custom-mpv {
+    border: 3px solid @mauve;
+}
+
 #custom-media.custom-spotify {
-    border: 3px solid #a6e3a1;
+    border: 3px solid @green;
 }
 
 #custom-media.custom-vlc {
-    border: 3px solid #fab387;
+    border: 3px solid @peach;
 }
 
 #custom-media.custom-firefox {
-    border: 3px solid #f38ba8;
+    border: 3px solid @red;
 }
 
 #temperature {
-    border: 3px solid #fab387;
-}
-
-#temperature.critical {
-    border: 3px solid #f38ba8;
+    border: 3px solid @red;
 }
 
 #tray {
-    border: 3px solid #fab387;
+    border: 3px solid @maroon;
 }
 
 #tray > .passive {
@@ -174,7 +140,7 @@ tooltip {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    border: 3px solid #f38ba8;
+    border: 3px solid @red;
 }
 
 #GtkSeparatorMenuItem {

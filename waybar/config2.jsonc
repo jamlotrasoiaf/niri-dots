@@ -24,6 +24,7 @@
             "spotify": "",
             "firefox": "",
             "vlc": "󰕼",
+	    "mpv": "",
             "default": "🎜"
         },
         "escape": true,
