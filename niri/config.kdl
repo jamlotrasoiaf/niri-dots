@@ -257,7 +257,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 
 spawn-at-startup "mako"
-spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/pictures/arch-rainbow.png"
+spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/pictures/space.png"
 spawn-at-startup "sh" "-c" "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "$HOME/.config/waybar/start.sh"
