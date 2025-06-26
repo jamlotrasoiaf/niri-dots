@@ -10,7 +10,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias warpon='warp-cli connect'
 alias warpoff='warp-cli disconnect && sudo systemctl restart systemd-resolved'
-alias clear-cache='sudo rm -rf /var/cache/* ~/.cache/yay/ ~/.cache/winetricks/'
+alias clear-cache='sudo rm -rf /var/cache/* ~/.cache/yay/ ~/.cache/winetricks/ ~/.cache/pip* ~/.cache/zen ~/.cache/firefox'
 alias remove-unused='sudo pacman -Qdtq | sudo pacman -Rns -'
 PS1='[\u@\h \W]\$ '
 
