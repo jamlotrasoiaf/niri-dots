@@ -1,6 +1,0 @@
-[general]
-import = [ "catppuccin_mocha.toml", ]
-
-[font]
-normal = { family = "Hack Nerd Font", style = "Regular" }
-size = 13
