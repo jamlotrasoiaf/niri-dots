@@ -1,0 +1,119 @@
+{
+  "msg": {
+    "backup": {
+      "completed": "Backup completed"
+    },
+    "error": {
+      "PluginUpgrade": "Upgrade error %s: %s",
+      "folderCreation": "Error on folder creation: %s",
+      "ConfigureBackupPath": "Please configure backup path in Joplin Tools > Options > Backup",
+      "PasswordMissMatch": "Passwords do not match!",
+      "BackupPathDontExist": "The Backup path '%s' does not exist!",
+      "BackupAlreadyRunning": "A backup is already running!",
+      "Backup": "Backup error for %s: %s",
+      "fileCopy": "Error on file/folder copy in %s: %s",
+      "deleteFile": "Error on file/folder delete in %s: %s",
+      "backupPathContainsImportantDir": "The backup path is or contains an important directory (%s) that could be overwritten by a backup. Without enabling the subfolder setting, this is not allowed!",
+      "BackupSetNotSupportedChars": "Backup set name does contain not allowed characters ( %s )!",
+      "passwordDoubleQuotes": "Password contains \" (double quotes), these are not allowed because of a bug. Password protection for the backup is deactivated!"
+    }
+  },
+  "settings": {
+    "path": {
+      "label": "Backup path",
+      "description": "Storage location for the backups. This path is exclusive to Joplin backups when the 'Create Subfolder' setting is disabled: there should be no other data in it!"
+    },
+    "exportPath": {
+      "label": "Temporary export path",
+      "description": "Temporary path for data export from Joplin, before the data is moved to the backup path"
+    },
+    "backupRetention": {
+      "label": "Keep x backups",
+      "description": "How many backups should be kept. If more than one version configured, folders are created in the Backup Path according to 'Backup set name' setting"
+    },
+    "backupInterval": {
+      "label": "Backup interval in hours",
+      "description": "0 = disable automatic backup"
+    },
+    "onlyOnChange": {
+      "label": "Only on change",
+      "description": "Creates a backup at the specified backup interval only if there was a change to a `note`, `tag`, `resource` or `notebook`"
+    },
+    "usePassword": {
+      "label": "Password protected backups",
+      "description": "Protect the backups via encrypted archive"
+    },
+    "password": {
+      "label": "Password",
+      "description": "If a password has been entered, the backups are protected with a password"
+    },
+    "passwordRepeat": {
+      "label": "Password (Repeat)",
+      "description": "Repeat password to validate"
+    },
+    "fileLogLevel": {
+      "label": "Log level",
+      "description": "Log level for the backup log file",
+      "value": {
+        "false": "Off",
+        "verbose": "Verbose",
+        "info": "Info",
+        "warn": "Warning",
+        "error": "Error"
+      }
+    },
+    "createSubfolder": {
+      "label": "Create Subfolder",
+      "description": "Create a subfolder in the configured {{backupPath}}. Deactivate only if there is no other data in the {{backupPath}}!"
+    },
+    "createSubfolderPerProfile": {
+      "label": "Create subfolder for Joplin profile",
+      "description": "Create a subfolder within the backup directory for the current profile. This allows multiple profiles from the same Joplin installation to use the same backup directory without overwriting backups made from other profiles. All profiles that use the same backup directory must have this setting enabled."
+    },
+    "zipArchive": {
+      "label": "Create archive",
+      "description": "Save backup data in an archive. If 'Password protected backups' is set, an archive is always created.",
+      "value": {
+        "no": "No",
+        "yes": "Yes",
+        "yesone": "Yes, one archive"
+      }
+    },
+    "compressionLevel": {
+      "label": "Compression level",
+      "description": "Compression level for archive",
+      "value": {
+        "copy": "Copy (no compression)",
+        "fastest": "Fastest",
+        "fast": "Fast",
+        "normal": "Normal",
+        "maximum": "Maximum",
+        "ultra": "Ultra"
+      }
+    },
+    "backupSetName": {
+      "label": "Backup set name",
+      "description": "Name of the backup set if multiple backups are to be kept. Moment Token (https://momentjs.com/docs/#/displaying/format/) can be used with {TOKEN}"
+    },
+    "backupPlugins": {
+      "label": "Backup plugins",
+      "description": "Backup plugin jpl files (No plugin settings!)"
+    },
+    "exportFormat": {
+      "label": "Export format",
+      "description": "Joplin data export format during the backup"
+    },
+    "singleJex": {
+      "label": "Single JEX",
+      "description": "Create only one JEX file (Recommended to prevent the loss of internal note links or folder structure during a restore!)"
+    },
+    "execFinishCmd": {
+      "label": "Command on Backup finish",
+      "description": "Execute command when backup is finished"
+    }
+  },
+  "backupReadme": "# Joplin Backup\n\nThis folder contains one or more backups of data from the Joplin note taking application.\n\nSee the [Backup documentation](https://joplinapp.org/plugins/plugin/io.github.jackgruber.backup/#restore) for information about how to restore from this backup.",
+  "command": {
+    "createBackup": "Create backup"
+  }
+}

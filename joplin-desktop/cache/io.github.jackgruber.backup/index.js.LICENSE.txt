@@ -1,0 +1,21 @@
+/*!
+   * mustache.js - Logic-less {{mustache}} templates with JavaScript
+   * http://github.com/janl/mustache.js
+   */
+
+/*!
+ * normalize-path <https://github.com/jonschlinkert/normalize-path>
+ *
+ * Copyright (c) 2014-2018, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/**
+ * @author      Created by Marcus Spiegel <spiegel@uscreen.de> on 2011-03-25.
+ * @link        https://github.com/mashpie/i18n-node
+ * @license     http://opensource.org/licenses/MIT
+ */
+
+//! moment.js
+
+//! moment.js locale configuration

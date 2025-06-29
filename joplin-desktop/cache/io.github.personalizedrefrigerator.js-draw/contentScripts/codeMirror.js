@@ -1,0 +1,1 @@
+(()=>{"use strict";var e={};e.default=e=>({plugin:(e,r)=>{e.defineExtension("js-draw--cmSelectAndDelete",(function(e){const r=this.getSearchCursor(e,0,{multiline:"disable"}),t=r.findNext(),s=r.from();if(!t)return!1;r.replace("");const n=[{anchor:s,head:s}];return this.setSelections(n,0),t}))},codeMirrorResources:["addon/search/searchcursor.js"]}),exports.default=e.default})();
