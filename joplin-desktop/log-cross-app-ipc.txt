@@ -1,1 +1,0 @@
-2025-06-29 19:45:48: Starting server using secret key: /home/sunny/.config/joplin-desktop/ipc_secret_key.txt
