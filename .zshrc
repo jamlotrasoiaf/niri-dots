@@ -30,6 +30,9 @@ source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
+
 if [ -d "/home/sunny/.local/bin" ] && [[ ":$PATH:" != *":/home/sunny/.local/bin:"* ]]; then
     PATH="${PATH:+"$PATH:"}/home/sunny/.local/bin"
 fi
