@@ -263,6 +263,7 @@ spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "$HOME/.config/waybar/start.sh"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "sh" "-c" "xwayland-satellite :12 &"
+spawn-at-startup "sh" "-c" "jamesdsp --tray"
 
 // EDITOR=nano sudo visudo -f /etc/sudoers.d/bluetooth-restart
 // add this line: sunny ALL=(ALL) NOPASSWD: /usr/bin/systemctl restart bluetooth
