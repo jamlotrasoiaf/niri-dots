@@ -634,3 +634,9 @@ layer-rule {
     match namespace="^wallpaper$"
     place-within-backdrop true
 }
+
+// Disable startup hotkey list
+hotkey-overlay {
+    skip-at-startup
+}
+
