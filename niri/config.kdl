@@ -257,7 +257,9 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 
 spawn-at-startup "mako"
-spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/pictures/arch-rainbow.png"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "swww img $HOME/.config/pictures/arch-rainbow.png"
+spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/pictures/cat_leaves_blurred.png"
 spawn-at-startup "sh" "-c" "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "$HOME/.config/waybar/start.sh"
@@ -618,4 +620,17 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+}
+
+// Disable the hot corners.
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+// Put swaybg inside the overview backdrop.
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
 }
