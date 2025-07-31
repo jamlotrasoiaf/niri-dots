@@ -1,3 +1,5 @@
+vim.cmd("set number")
+
 require("config.lazy")
 
 local builtin = require("telescope.builtin")
