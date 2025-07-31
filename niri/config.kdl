@@ -285,6 +285,7 @@ environment {
     QT_STYLE_OVERRIDE "kvantum"
     _JAVA_AWT_WM_NONREPARENTING "1"
     GDK_BACKEND "wayland,x11,*"
+    SDL_VIDEODRIVER "wayland"
     CLUTTER_BACKEND "wayland,x11,*"
 }
 
