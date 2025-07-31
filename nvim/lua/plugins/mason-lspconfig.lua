@@ -17,7 +17,7 @@ return {
             cmd = { "tinymist" },
             filetypes = { "typst" },
             settings = {
-		formatterMode = "typstyle",
+		        formatterMode = "typstyle",
                 exportPdf = "onType",
                 semanticTokens = "disable"
             }
