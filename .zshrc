@@ -27,7 +27,6 @@ alias warpon='warp-cli connect'
 alias warpoff='warp-cli disconnect && sudo systemctl restart systemd-resolved'
 alias clear-cache='sudo rm -rf /var/cache/* ~/.cache/yay/ ~/.cache/winetricks/ ~/.cache/zen ~/.cache/firefox'
 alias remove-unused='sudo pacman -Qdtq | sudo pacman -Rns -'
-alias kernel-cleanup='sudo pacman -Rns patchutils python-sphinx_rtd_theme bc wget xmlto python-sphinx imagemagick docbook-xsl cpio inetutils'
 alias vi='nvim'
 alias vim='nvim'
 
