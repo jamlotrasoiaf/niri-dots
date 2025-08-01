@@ -287,6 +287,8 @@ environment {
     GDK_BACKEND "wayland,x11,*"
     SDL_VIDEODRIVER "wayland"
     CLUTTER_BACKEND "wayland,x11,*"
+    RUSTUP_HOME "/mnt/storage/rust/.rustup"
+    CARGO_HOME "/mnt/storage/rust/.cargo"
 }
 
 cursor {
