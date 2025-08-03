@@ -27,6 +27,8 @@ alias warpon='warp-cli connect'
 alias warpoff='warp-cli disconnect && sudo systemctl restart systemd-resolved'
 alias clear-cache='sudo rm -rf /var/cache/* ~/.cache/yay/ ~/.cache/winetricks/ ~/.cache/zen ~/.cache/firefox'
 alias remove-unused='sudo pacman -Qdtq | sudo pacman -Rns -'
+alias update-mirrors='rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist'
+alias update-chaotic='rate-mirrors chaotic-aur | sudo tee /etc/pacman.d/chaotic-mirrorlist'
 alias vi='nvim'
 alias vim='nvim'
 
