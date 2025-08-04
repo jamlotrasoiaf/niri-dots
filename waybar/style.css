@@ -41,6 +41,8 @@ tooltip {
 
 #workspaces button.empty {
     color: @overlay1;
+    padding: 0;
+    min-width: 0;
 }
 
 #workspaces button.active {
@@ -49,6 +51,10 @@ tooltip {
 
 #workspaces button.urgent {
     color: @red;
+}
+
+#workspaces button.empty * {
+    font-size: 0px;
 }
 
 #window,
