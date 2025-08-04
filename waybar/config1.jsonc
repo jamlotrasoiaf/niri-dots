@@ -22,6 +22,7 @@
     },
     "network": {
         "format-wifi": "{signalStrength}%  ",
+        "interval": 5,
         "format-ethernet": "{ifname} 󰈀 ",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-disconnected": "⚠ ",
@@ -44,7 +45,7 @@
     "temperature": {
         "critical-threshold": 80,
         "format": "{temperatureC}°C {icon}",
-	"hwmon-path": "/sys/class/hwmon/hwmon1/temp3_input",
+    	"hwmon-path": "/sys/class/hwmon/hwmon1/temp3_input",
         "format-icons": ["", "", "󰈸"],
         "tooltip": false
     },
