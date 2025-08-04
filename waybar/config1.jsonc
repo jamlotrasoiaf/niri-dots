@@ -11,6 +11,7 @@
     "modules-center": [],
     "modules-right": [
         "tray",
+        "network",
         "pulseaudio",
         "backlight",
         "battery"
@@ -18,6 +19,13 @@
     "tray": {
         "icon-size": 14,
         "spacing": 10
+    },
+    "network": {
+        "format-wifi": "{signalStrength}%  ",
+        "format-ethernet": "{ifname} 󰈀 ",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-disconnected": "⚠ ",
+        "format-alt": "{bandwidthDownBytes} 󰇚  {bandwidthUpBytes} 󰕒 "
     },
     "clock": {
         "format": "{:%I:%M:%S %p}",

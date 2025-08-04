@@ -57,6 +57,7 @@ tooltip {
     font-size: 0px;
 }
 
+#network,
 #window,
 #clock,
 #battery,
@@ -137,6 +138,10 @@ tooltip {
 }
 
 #tray {
+    border: 3px solid @red;
+}
+
+#network {
     border: 3px solid @maroon;
 }
 
