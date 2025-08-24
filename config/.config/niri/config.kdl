@@ -258,15 +258,14 @@ layout {
 
 spawn-at-startup "mako"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "sh" "-c" "swww img $HOME/.config/pictures/arch-rainbow.png"
-spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/pictures/cat_leaves_blurred.png"
+spawn-at-startup "sh" "-c" "swww img $HOME/.config/pictures/cat-vibing.png"
+spawn-at-startup "sh" "-c" "swaybg -m fill -i $HOME/.config/pictures/koi_blur.png"
 spawn-at-startup "sh" "-c" "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "$HOME/.config/waybar/start.sh"
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "sh" "-c" "xwayland-satellite :12 &"
-spawn-at-startup "sh" "-c" "jamesdsp --tray"
-spawn-at-startup "niri-float-sticky"
+spawn-at-startup "/usr/lib/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
+spawn-at-startup "xwayland-satellite" ":12"
+spawn-at-startup "jamesdsp" "--tray"
 
 // EDITOR=nano sudo visudo -f /etc/sudoers.d/bluetooth-restart
 // add this line: sunny ALL=(ALL) NOPASSWD: /usr/bin/systemctl restart bluetooth
@@ -277,9 +276,11 @@ prefer-no-csd
 environment {
     DISPLAY ":12"
     XCURSOR_THEME "catppuccin-mocha-dark-cursors"
+    XCURSOR_SIZE "24"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     QT_QPA_PLATFORM "wayland"
     QT_QPA_PLATFORMTHEME "qt5ct"
+    QT_QPA_PLATFORMTHEME_QT6 "qt6ct"
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
     QT_AUTO_SCREEN_SCALE_FACTOR "1"
     QT_STYLE_OVERRIDE "kvantum"
@@ -293,7 +294,7 @@ environment {
 
 cursor {
     xcursor-theme "catppuccin-mocha-dark-cursors"
-    hide-when-typing
+    xcursor-size 24
 }
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
