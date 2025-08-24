@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <object class="GtkMenu" id="menu">
-  <child>
+    <child>
 		<object class="GtkMenuItem" id="lock">
 			<property name="label">Lock</property>
         </object>
 	</child>
-  <child>
+    <child>
 		<object class="GtkMenuItem" id="logout">
 			<property name="label">Logout</property>
         </object>
-	</child>
-  <child>
+        </child>
+    <child>
+      <object class="GtkSeparatorMenuItem" id="delimiter1"/>
+    </child>
+    <child>
 		<object class="GtkMenuItem" id="suspend">
 			<property name="label">Suspend</property>
         </object>
 	</child>
+
     <child>
-      <object class="GtkSeparatorMenuItem" id="delimiter1"/>
+		<object class="GtkMenuItem" id="hibernate">
+			<property name="label">Hibernate</property>
+        </object>
+	</child>
+    <child>
+      <object class="GtkSeparatorMenuItem" id="delimiter2"/>
     </child>
     <child>
         <object class="GtkMenuItem" id="shutdown">

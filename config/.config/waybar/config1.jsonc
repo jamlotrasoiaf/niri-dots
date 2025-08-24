@@ -1,6 +1,8 @@
 // -*- mode: jsonc -*-
 {
     "spacing": 5,
+    "layer": "top",
+    "position": "top",
     "modules-left": [
         "custom/distro",
         "clock",
@@ -94,8 +96,9 @@
 			"shutdown": "shutdown now",
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
-            "lock": "swaylock",
-            "logout": "niri msg action quit"
+			"hibernate": "systemctl suspend-then-hibernate",
+            		"lock": "swaylock",
+            		"logout": "niri msg action quit --skip-confirmation"
 	}
     }
 }
