@@ -3,21 +3,59 @@
     "spacing": 5,
     "layer": "top",
     "position": "top",
+    "margin-top": 0,
+    "margin-bottom": 0,
     "modules-left": [
-        "custom/distro",
-        "clock",
-        "cpu",
-        "memory",
-        "temperature",
+        "group/info"
     ],
-    "modules-center": [],
+    "modules-center": [
+        "group/niri"
+    ],
     "modules-right": [
-        "tray",
-        "network",
-        "pulseaudio",
-        "backlight",
-        "battery"
+        "group/rest"
     ],
+    
+    "group/info": {
+        "orientation": "inherit",
+        "drawer": { "transition-duration": 300, "transition-left-to-right": true },
+        "modules": [
+		    "custom/arrow-right",
+            "clock",
+            "cpu",
+            "memory",
+            "temperature",
+            "network",
+            "pulseaudio",
+            "backlight",
+            "battery"
+        ]
+    },
+
+    "group/niri": {
+        "orientation": "inherit",
+        "drawer": { "transition-duration": 300, "transition-left-to-right": true },
+        "modules": [
+        	"custom/niri",
+        	"niri/workspaces",
+            "niri/window"
+        ]
+    },
+
+    "group/rest": {
+        "orientation": "inherit",
+        "drawer": { "transition-duration": 300, "transition-left-to-right": true },
+        "modules": [
+        	"custom/arrow-left",
+		    "custom/media",
+            "tray",
+            "custom/distro"
+        ]
+    },
+
+    "custom/arrow-left":  { "format": "  ", "tooltip": false},
+    "custom/niri": { "format": "  ", "tooltip": false},
+    "custom/arrow-right":  { "format": "  ", "tooltip": false},
+
     "tray": {
         "icon-size": 14,
         "spacing": 10
@@ -100,6 +138,36 @@
 			"hibernate": "systemctl suspend-then-hibernate",
             		"lock": "swaylock",
             		"logout": "niri msg action quit --skip-confirmation"
-	}
+	    }
+    },
+
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": "" 
+        },
+    },
+    "niri/window": {
+	    "format": "{title}",
+	    "max-length": 30
+    },
+
+    "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 50,
+        "format-icons": {
+            "spotify": "",
+            "firefox": "",
+            "vlc": "󰕼",
+	        "mpv": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause",
+        "on-double-click": "playerctl next",
+        "on-click-right": "playerctl previous"
     }
 }

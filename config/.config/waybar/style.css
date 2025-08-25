@@ -1,11 +1,12 @@
 @import "mocha.css";
 
 * {
-    padding: 2px;
+    padding: 1;
     border-radius: 0px;
     font-size: 14px;
     font-family: "Iosevka Nerd Font" ;
-    min-height: 20px;
+    min-height: 0;
+    margin: 0;
 }
 
 window#waybar {
@@ -55,10 +56,14 @@ tooltip {
 
 #workspaces button.empty * {
     font-size: 0px;
+    background: transparent;
+    border: 0px;
 }
 
 window#waybar.empty #window {
     font-size: 0px;
+    background: transparent;
+    border: 0px;
 }
 
 #network,
@@ -76,49 +81,48 @@ window#waybar.empty #window {
 #custom-distro,
 #tray,
 #workspaces {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 4px;
     background-color: @base;
     color: @text;
     opacity: 1;
 }
 
 #clock {
-    border: 3px solid @yellow;
+    border: 3px solid @red;
 }
 
 #custom-distro {
-    border: 3px solid @green;
-    padding-right: 13px;
+    border: 3px solid @pink;
 }
 
 #window {
-    border: 3px solid @sapphire;
+    border: 3px solid @lavender;
 }
 
 #battery {
-    border: 3px solid @rosewater;
+    border: 3px solid @sapphire;
 }
 
 #cpu {
-    border: 3px solid @peach;
-    padding-right: 15px
-}
-
-#memory {
     border: 3px solid @maroon;
 }
 
+#memory {
+    border: 3px solid @peach;
+}
+
 #backlight {
-    border: 3px solid @flamingo;
+    border: 3px solid @sky;
 }
 
 #pulseaudio {
-    border: 3px solid @pink;
+    border: 3px solid @teal;
 }
 
 #custom-media {
     border: 3px solid @sky;
-    min-width: 100px;
 }
 
 #custom-media.custom-mpv {
@@ -138,15 +142,15 @@ window#waybar.empty #window {
 }
 
 #temperature {
-    border: 3px solid @red;
+    border: 3px solid @yellow;
 }
 
 #tray {
-    border: 3px solid @red;
+    border: 3px solid @mauve;
 }
 
 #network {
-    border: 3px solid @maroon;
+    border: 3px solid @green;
 }
 
 #tray > .passive {
