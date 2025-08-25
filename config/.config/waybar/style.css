@@ -1,170 +1,118 @@
 @import "mocha.css";
 
 * {
-    padding: 0;
-    border-radius: 0px;
-    font-size: 14px;
-    font-family: "Iosevka Nerd Font" ;
+    border: none;
     min-height: 0;
-    margin: 0;
+    font-family: "Iosevka Nerd Font Mono";
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0);
-    color: @text;
+    background: @base;
+    border: 2px solid @text;
+    border-radius: 4px;
 }
 
 tooltip {
-    border: 2px solid @blue;
     background-color: @base;
+    border: 2px solid @text;
+    font-size: 2px;
+	color: @text;
 }
 
-#workspaces {
-    border: 2px solid @blue;
-}
-
-#workspaces button {
-    padding-right: 5px;
-    padding-left: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: transparent;
-    color: @subtext0;
-}
-
-#workspaces button:hover {
-    color: @subtext1;
-}
-
-#workspaces button.empty {
-    color: @overlay1;
-    padding: 0;
-    min-width: 0;
-}
-
-#workspaces button.active {
-    color: @text;
-}
-
-#workspaces button.urgent {
-    color: @red;
-}
-
-#workspaces button.empty * {
-    font-size: 0px;
-    background: transparent;
-    border: 0px;
+tooltip label {
+	margin: 8px;
 }
 
 window#waybar.empty #window {
     font-size: 0px;
-    background: transparent;
     border: 0px;
 }
 
-#network,
 #window,
+#custom-media,
 #clock,
-#battery,
+#tray,
 #cpu,
 #memory,
-#temperature,
-#backlight,
+#battery,
 #network,
-#bluetooth,
-#pulseaudio,
-#custom-media,
-#custom-distro,
-#tray,
+#pulseaudio {
+    margin: 6px 6px 6px 0px;
+    padding: 2px 8px;
+	border-radius: 4px;
+}
+
 #workspaces {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin: 4px;
-    background-color: @base;
+    margin: 6px 0px 6px 6px;
+    border-radius: 4px;
+}
+
+#workspaces button {
+    all: initial;
+    min-width: 0;
+    box-shadow: inset 0 -3px transparent;
+    padding: 2px 4px;
     color: @text;
-    opacity: 1;
+    background-color: @mantle;
+    border: 2px solid @text;
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+#workspaces button.active {
+    color: @crust;
+    background-color: @text;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+	color: @crust;
+	border: 2px solid @red;
 }
 
 #clock {
-    border: 2px solid @red;
+    background-color: @mantle;
+    border: 2px solid @text;
+    color: @text;
+    margin-left: 5px;
 }
 
-#custom-distro {
-    border: 2px solid @pink;
-}
-
-#window {
-    border: 2px solid @lavender;
-}
-
-#battery {
-    border: 2px solid @sapphire;
-}
-
-#cpu {
-    border: 2px solid @maroon;
-}
-
-#memory {
-    border: 2px solid @peach;
-}
-
-#backlight {
-    border: 2px solid @sky;
-}
-
-#pulseaudio {
-    border: 2px solid @teal;
-}
-
-#custom-media {
-    border: 2px solid @sky;
-}
-
-#custom-media.custom-mpv {
-    border: 2px solid @mauve;
-}
-
-#custom-media.custom-spotify {
-    border: 2px solid @green;
-}
-
-#custom-media.custom-vlc {
-    border: 2px solid @peach;
-}
-
-#custom-media.custom-firefox {
-    border: 2px solid @red;
-}
-
-#temperature {
-    border: 2px solid @yellow;
-}
-
+#window,
+#custom-media,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#battery,
 #tray {
-    border: 2px solid @mauve;
+    background-color: @base;
+    border: 2px solid @text;
+    color: @text;
 }
 
 #network {
-    border: 2px solid @green;
+	min-width: 100px;
 }
 
-#tray > .passive {
-    -gtk-icon-effect: dim;
+#cpu,
+#memory,
+#battery,
+#pulseaudio {
+	min-width: 60px;
 }
 
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
+#cpu.critical,
+#memory.critical {
+    color: @red;
     border: 2px solid @red;
 }
 
-#GtkSeparatorMenuItem {
-    border-radius: 0px;
-    padding: 0px;
-}
-
-#custom-arrow-left {
-    margin-bottom: 5px;
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+    color: @red;
+    border: 2px solid @red;
 }

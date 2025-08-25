@@ -1,0 +1,52 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 0,
+    
+    "margin-top": 0,
+    "margin-right": 10,
+    "margin-bottom": 10,
+    "margin-left": 10,
+    
+    "modules-left": [
+        "niri/workspaces"
+    ],
+    
+    "modules-center": [
+        "niri/window"
+    ],
+
+    "modules-right": [
+        "custom/media"
+    ],
+
+    "niri/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "tooltip": false
+    },
+
+    "niri/window": {
+	    "format": "{title}",
+	    "max-length": 50
+    },
+    
+    "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 50,
+        "format-icons": {
+            "spotify": "",
+            "firefox": "",
+            "vlc": "󰕼",
+	        "mpv": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause",
+        "on-double-click": "playerctl next",
+        "on-click-right": "playerctl previous"
+    }
+}

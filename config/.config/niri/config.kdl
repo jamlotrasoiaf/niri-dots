@@ -395,8 +395,8 @@ binds {
     Mod+D hotkey-overlay-title="Reload waybar" { spawn "sh" "-c" "$HOME/.config/waybar/start.sh"; }
     Mod+S hotkey-overlay-title="Clipboard history" { spawn "sh" "-c" "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Mod+B { spawn "sh" "-c" "systemctl --user stop pipewire wireplumber pipewire-pulse && sleep 1 && sudo systemctl restart bluetooth && sleep 1 && systemctl --user start pipewire wireplumber pipewire-pulse";}
-
+    Mod+B { spawn "sh" "-c" "systemctl --user stop pipewire wireplumber pipewire-pulse && sleep 1 && sudo systemctl restart bluetooth && sleep 1 && systemctl --user start pipewire wireplumber pipewire-pulse"; }
+    Ctrl+Escape hotkey-overlay-title="Logout menu" { spawn "sh" "-c" "$HOME/.local/bin/logout-menu"; }
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
     // Mod+T { spawn "bash" "-c" "notify-send hello && exec alacritty"; }
