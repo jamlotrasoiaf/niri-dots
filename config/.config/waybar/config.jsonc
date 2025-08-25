@@ -2,7 +2,8 @@
 {
     "spacing": 0,
     "layer": "top",
-    "position": "top",
+    "position": "left",
+    "mode": "hide",
     "margin-top": 0,
     "margin-bottom": 0,
     "modules-left": [
@@ -52,15 +53,16 @@
         ]
     },
 
-    "custom/arrow-left":  { "format": "  ", "tooltip": false},
-    "custom/niri": { "format": "  ", "tooltip": false},
-    "custom/arrow-right":  { "format": "  ", "tooltip": false},
+    "custom/arrow-left":  { "format": "  ", "tooltip": false, "rotate": 270 },
+    "custom/niri": { "format": "  ", "tooltip": false, "rotate": 90 },
+    "custom/arrow-right":  { "format": "  ", "tooltip": false, "rotate": 270 },
 
     "tray": {
         "icon-size": 14,
         "spacing": 10
     },
     "network": {
+        "rotate": 90,
         "format-wifi": "{signalStrength}%  ",
         "interval": 5,
         "format-ethernet": "{ifname} 󰈀 ",
@@ -69,6 +71,7 @@
         "format-alt": "{bandwidthDownBytes} 󰇚  {bandwidthUpBytes} 󰕒 "
     },
     "clock": {
+        "rotate": 90,
         "format": "{:%I:%M:%S %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%m/%d/%Y}",
@@ -77,12 +80,15 @@
         "on-scroll-down": "shift_down"
     },
     "cpu": {
+        "rotate":90,
         "format": "{usage}% ",
     },
     "memory": {
+        "rotate": 90,
         "format": "{}%  "
     },
     "temperature": {
+        "rotate": 90,
         "interval": 3,
         "critical-threshold": 80,
         "format": "{temperatureC}°C {icon}",
@@ -92,11 +98,13 @@
     },
     "backlight": {
         // "device": "acpi_video1",
+        "rotate": 90,
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "tooltip": false
     },
     "battery": {
+        "rotate": 90,
         "states": {
             // "good": 95,
             "warning": 30,
@@ -111,6 +119,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
+        "rotate": 90,
         "format": "{volume}% {icon} {format_source}",
         "format-muted": "󰝟 {format_source}",
         "format-source": " {volume}% ",
@@ -126,7 +135,8 @@
         "on-click": "pavucontrol"
     },
     "custom/distro": {
-        "format" : " Arch btw",
+        "rotate": 90,
+        "format" : " ",
         "class": "custom-distro",
 		"tooltip": false,
         "menu": "on-click",
@@ -149,11 +159,13 @@
         },
     },
     "niri/window": {
+        "rotate": 90,
 	    "format": "{title}",
 	    "max-length": 50
     },
 
     "custom/media": {
+        "rotate": 90,
         "format": "{icon} {text}",
         "return-type": "json",
         "max-length": 50,

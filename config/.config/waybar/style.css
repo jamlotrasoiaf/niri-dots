@@ -1,7 +1,7 @@
 @import "mocha.css";
 
 * {
-    padding: 1;
+    padding: 0;
     border-radius: 0px;
     font-size: 14px;
     font-family: "Iosevka Nerd Font" ;
@@ -14,24 +14,20 @@ window#waybar {
     color: @text;
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
 tooltip {
-    border: 3px solid @blue;
+    border: 2px solid @blue;
     background-color: @base;
 }
 
 #workspaces {
-    border: 3px solid @blue;
+    border: 2px solid @blue;
 }
 
 #workspaces button {
-    padding-right: 6px;
+    padding-right: 5px;
     padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: transparent;
     color: @subtext0;
 }
@@ -81,8 +77,10 @@ window#waybar.empty #window {
 #custom-distro,
 #tray,
 #workspaces {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
     margin: 4px;
     background-color: @base;
     color: @text;
@@ -90,67 +88,67 @@ window#waybar.empty #window {
 }
 
 #clock {
-    border: 3px solid @red;
+    border: 2px solid @red;
 }
 
 #custom-distro {
-    border: 3px solid @pink;
+    border: 2px solid @pink;
 }
 
 #window {
-    border: 3px solid @lavender;
+    border: 2px solid @lavender;
 }
 
 #battery {
-    border: 3px solid @sapphire;
+    border: 2px solid @sapphire;
 }
 
 #cpu {
-    border: 3px solid @maroon;
+    border: 2px solid @maroon;
 }
 
 #memory {
-    border: 3px solid @peach;
+    border: 2px solid @peach;
 }
 
 #backlight {
-    border: 3px solid @sky;
+    border: 2px solid @sky;
 }
 
 #pulseaudio {
-    border: 3px solid @teal;
+    border: 2px solid @teal;
 }
 
 #custom-media {
-    border: 3px solid @sky;
+    border: 2px solid @sky;
 }
 
 #custom-media.custom-mpv {
-    border: 3px solid @mauve;
+    border: 2px solid @mauve;
 }
 
 #custom-media.custom-spotify {
-    border: 3px solid @green;
+    border: 2px solid @green;
 }
 
 #custom-media.custom-vlc {
-    border: 3px solid @peach;
+    border: 2px solid @peach;
 }
 
 #custom-media.custom-firefox {
-    border: 3px solid @red;
+    border: 2px solid @red;
 }
 
 #temperature {
-    border: 3px solid @yellow;
+    border: 2px solid @yellow;
 }
 
 #tray {
-    border: 3px solid @mauve;
+    border: 2px solid @mauve;
 }
 
 #network {
-    border: 3px solid @green;
+    border: 2px solid @green;
 }
 
 #tray > .passive {
@@ -159,7 +157,7 @@ window#waybar.empty #window {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    border: 3px solid @red;
+    border: 2px solid @red;
 }
 
 #GtkSeparatorMenuItem {
