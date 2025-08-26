@@ -14,7 +14,9 @@
         "tray",
     ],
 
-    "modules-center": [],
+    "modules-center": [
+        "wlr/taskbar"
+    ],
 
     "modules-right": [
         "cpu",
