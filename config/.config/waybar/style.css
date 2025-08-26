@@ -75,13 +75,13 @@ window#waybar.empty #window {
 }
 
 #clock {
-    background-color: @mantle;
+    background-color: @base;
     border: 2px solid @text;
     color: @text;
     margin-left: 5px;
 }
 
-#taskbar,
+#taskbar button,
 #window,
 #custom-media,
 #cpu,
@@ -93,6 +93,10 @@ window#waybar.empty #window {
     background-color: @base;
     border: 2px solid @text;
     color: @text;
+}
+
+#taskbar button {
+    padding: 4px;
 }
 
 #network {

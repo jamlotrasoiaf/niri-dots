@@ -26,6 +26,12 @@
         "pulseaudio"
     ],
 
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "on-click": "activate"
+    },
+
     "tray": {
         "spacing": 10,
         "tooltip": false
