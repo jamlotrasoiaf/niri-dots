@@ -395,8 +395,8 @@ binds {
     Mod+D hotkey-overlay-title="Reload waybar" { spawn "sh" "-c" "$HOME/.config/waybar/start.sh"; }
     Mod+X hotkey-overlay-title="Clipboard history" { spawn "sh" "-c" "$HOME/.local/bin/cliphist-fuzzel-img"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Mod+B { spawn "sh" "-c" "systemctl --user stop pipewire wireplumber pipewire-pulse && sleep 1 && sudo systemctl restart bluetooth && sleep 1 && systemctl --user start pipewire wireplumber pipewire-pulse"; }
-    Ctrl+Escape hotkey-overlay-title="Logout menu" { spawn "sh" "-c" "$HOME/.local/bin/logout-menu"; }
+    Mod+B hotkey-overlay-title="Restart bluetooth" { spawn "sh" "-c" "systemctl --user stop pipewire wireplumber pipewire-pulse && sleep 1 && sudo systemctl restart bluetooth && sleep 1 && systemctl --user start pipewire wireplumber pipewire-pulse"; }
+    Mod+Escape hotkey-overlay-title="Logout menu" { spawn "sh" "-c" "$HOME/.local/bin/logout-menu"; }
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
     // Mod+T { spawn "bash" "-c" "notify-send hello && exec alacritty"; }
@@ -626,7 +626,7 @@ binds {
     //
     // The allow-inhibiting=false property can be applied to other binds as well,
     // which ensures niri always processes them, even when an inhibitor is active.
-    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    Ctrl+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Mod+Shift+E { quit; }
