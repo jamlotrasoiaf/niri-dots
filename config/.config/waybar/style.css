@@ -1,0 +1,145 @@
+@import "mocha.css";
+
+* {
+    border: none;
+    min-height: 0;
+    font-family: "Iosevka Nerd Font Mono";
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+}
+
+window#waybar {
+    background: @base;
+    border: 2px solid @text;
+    border-radius: 4px;
+}
+
+tooltip {
+    background-color: @base;
+    border: 2px solid @text;
+    font-size: 2px;
+	color: @text;
+}
+
+tooltip label {
+	margin: 8px;
+}
+
+window#waybar.empty #window {
+    font-size: 0px;
+    border: 0px;
+}
+
+#temperature,
+#clock,
+#tray,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio {
+    margin: 6px 6px 6px 0px;
+    padding: 4px 8px;
+	border-radius: 4px;
+}
+
+#idle_inhibitor,
+#custom-media,
+#window {
+    margin: 6px 6px 6px 0px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+#taskbar {
+    margin: 6px 6px 6px 0px;
+    border-radius: 4px;
+}
+
+#workspaces {
+    margin: 6px 0px 6px 6px;
+    border-radius: 4px;
+}
+
+#workspaces button {
+    all: initial;
+    min-width: 0;
+    box-shadow: inset 0 -3px transparent;
+    padding: 4px 4px;
+    color: @text;
+    background-color: @base;
+    border: 2px solid @text;
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+#workspaces button.active {
+    color: @crust;
+    background-color: @text;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+	color: @crust;
+	border: 2px solid @red;
+}
+
+#workspaces button.empty {
+    color: transparent;
+    border: 0px;
+}
+
+#clock {
+    background-color: @base;
+    border: 2px solid @text;
+    color: @text;
+    margin-left: 5px;
+}
+
+#taskbar button,
+#idle_inhibitor,
+#temperature,
+#window,
+#custom-media,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#battery,
+#tray {
+    background-color: @base;
+    border: 2px solid @text;
+    color: @text;
+}
+
+#taskbar button {
+    padding: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#network {
+	min-width: 100px;
+}
+
+#cpu,
+#memory,
+#battery,
+#pulseaudio {
+	min-width: 60px;
+}
+
+#temperature.critical,
+#cpu.critical,
+#memory.critical {
+    color: @red;
+    border: 2px solid @red;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+    color: @red;
+    border: 2px solid @red;
+}

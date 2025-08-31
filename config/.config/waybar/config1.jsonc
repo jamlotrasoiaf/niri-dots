@@ -1,0 +1,101 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "spacing": 0,
+    "height": 0,
+
+    "margin-top": 10,
+    "margin-right": 10,
+    "margin-bottom": 0,
+    "margin-left": 10,
+
+    "modules-left": [
+        "clock",
+        "cpu",
+        "memory",
+        "temperature"
+    ],
+
+    "modules-center": [
+        "wlr/taskbar"
+    ],
+
+    "modules-right": [
+        "tray",
+        "battery",
+        "network",
+        "pulseaudio"
+    ],
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "on-click": "activate"
+    },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%H:%M - %a, %d %b %Y}",
+        "tooltip": false
+    },
+
+    "temperature": {
+        "format": "temp {temperatureC}°C",
+        "interval": 5,
+        "warning-threshold": 75,
+        "critical-threshold": 90,
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 90
+        }
+    },
+
+    "memory": {
+        "format": "mem {percentage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 80
+        }
+    },
+
+    "battery": {
+        "format": "bat {capacity}%",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+
+    "network": {
+        "format-wifi" : "wifi {bandwidthDownBits}",
+        "format-ethernet": "enth {bandwidthDownBits}",
+        "format-disconnected" : "no network",
+        "on-click": "networkmanager_dmenu", // Run this once in terminal to generate config!
+        "interval": 5,
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "vol {volume}%",
+        "format-bluetooth": "vol {volume}%",
+        "format-muted": "muted",
+        "nospacing": 1,
+        "on-click": "pavucontrol",
+        "tooltip": false
+    }
+}

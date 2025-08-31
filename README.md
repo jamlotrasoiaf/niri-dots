@@ -1,0 +1,32 @@
+# Niri dots
+
+my dots for niri.
+ ---
+- **Compositor**: `niri`
+- **Terminal**: `ghostty`
+- **Text Editor**: `neovim`
+- **Notifications**: `mako`
+- **App Launcher, Logout Menu**: `fuzzel`
+- **Bar**: `waybar`
+- **Fonts**: `ttf-iosevka-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji`
+- **Browser**: `firefox`
+- **Bluetooth**: `bluez bluez-utils blueman`
+- **XDG Desktop Portal**: `xdg-desktop-portal-gnome`
+- **Polkit Agent**: `pantheon-polkit-agent`
+- **Audio Server**: `pipewire`
+- **Audio Control**: `pavucontrol`
+- **Brightness Control**: `brightnessctl`
+- **Clipboard**: `cliphist imagemagick (for image support)`
+- **Network Management**: `networkmanager networkmanager-dmenu-git`
+- **Shell**: `zsh`
+- **Shell Plugins**: `zsh-fast-syntax-highlighting zsh-autosuggestions zsh-theme-powerlevel10k-git`
+- **Wallpaper**: `swww`
+- **Overview Backdrop**: `swaybg`
+- **Idle Daemon**: `swayidle`
+- **Lockscreen**: `swaylock`
+- **Themes**: `catppuccin-gtk-theme-mocha kvantum-theme-catppuccin-git`
+- **Cursor**: `catppuccin-cursors-mocha`
+- **Theming apps**: `nwg-look kvantum kvantum-qt5 qt5ct qt6ct`
+- **Qt Wayland Support**: `qt5-wayland qt6-wayland`
+- **XWayland**: `xwayland-satellite`
+- **Other Apps**: `discord spotify okular`
