@@ -44,6 +44,7 @@ window#waybar.empty #window {
 	border-radius: 4px;
 }
 
+#cava,
 #idle_inhibitor,
 #custom-media,
 #window {
@@ -85,6 +86,7 @@ window#waybar.empty #window {
 	border: 2px solid @red;
 }
 
+#cava.silent,
 #workspaces button.empty {
     color: transparent;
     border: 0px;
@@ -97,6 +99,7 @@ window#waybar.empty #window {
     margin-left: 5px;
 }
 
+#cava,
 #taskbar button,
 #idle_inhibitor,
 #temperature,

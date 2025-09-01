@@ -1,3 +1,4 @@
+config/.config/cava/shaders
 config/.config/nvim/lazy-lock.json
 scripts/.local/share
 scripts/.local/state
