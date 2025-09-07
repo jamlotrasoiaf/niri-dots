@@ -7,11 +7,12 @@ my dots for niri.
 - **Text Editor**: `neovim`
 - **Notifications**: `mako`
 - **App Launcher, Logout Menu**: `fuzzel`
-- **Bar**: `waybar`
+- **Bar**: `waybar-git`
 - **Fonts**: `ttf-iosevka-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji`
 - **Browser**: `firefox`
+- **File Manager**: `nemo`
 - **Bluetooth**: `bluez bluez-utils blueman`
-- **XDG Desktop Portal**: `xdg-desktop-portal-gnome`
+- **XDG Desktop Portal**: `xdg-desktop-portal-wlr xdg-desktop-portal-gtk`
 - **Polkit Agent**: `pantheon-polkit-agent`
 - **Audio Server**: `pipewire`
 - **Audio Control**: `pavucontrol`
@@ -29,4 +30,5 @@ my dots for niri.
 - **Theming apps**: `nwg-look kvantum kvantum-qt5 qt5ct qt6ct`
 - **Qt Wayland Support**: `qt5-wayland qt6-wayland`
 - **XWayland**: `xwayland-satellite`
-- **Other Apps**: `discord spotify okular`
+- **Other Apps**: `discord spotify zapzap okular`
+- **Mods**: `equicord-installer-bin spicetify-cli spicetify-marketplace-bin`
