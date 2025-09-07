@@ -1,7 +1,7 @@
 daemonize
 ignore-empty-password
 image=$HOME/.config/pictures/bsod.png
-font=Iosevka Nerd Font
+font=D2CodingLigature Nerd Font
 font-size=14
 color=1e1e2e
 bs-hl-color=f5e0dc
