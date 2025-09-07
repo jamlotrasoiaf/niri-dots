@@ -55,7 +55,7 @@ window#waybar.empty #window {
 
 #taskbar {
     margin: 6px 6px 6px 0px;
-    border-radius: 4px;
+    border: none;
 }
 
 #workspaces {
@@ -100,7 +100,6 @@ window#waybar.empty #window {
 }
 
 #cava,
-#taskbar button,
 #idle_inhibitor,
 #temperature,
 #window,
@@ -117,9 +116,9 @@ window#waybar.empty #window {
 }
 
 #taskbar button {
-    padding: 0;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 0px;
+    padding-right: 2px;
+    padding-left: 2px;
 }
 
 #network {

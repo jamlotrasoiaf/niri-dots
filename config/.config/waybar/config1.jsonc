@@ -29,7 +29,7 @@
 
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 20,
+        "icon-size": 25,
         "on-click": "activate"
     },
 
