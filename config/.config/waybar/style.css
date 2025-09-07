@@ -120,6 +120,10 @@ window#waybar.empty #window {
     color: @text;
 }
 
+#cava {
+    margin-left: 4px;
+}
+
 #taskbar button {
     padding: 0px;
     padding-right: 2px;
