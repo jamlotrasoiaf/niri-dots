@@ -11,13 +11,13 @@
 
 window#waybar {
     background: @base;
-    border: 2px solid @text;
+    border: 2px solid @lavender;
     border-radius: 4px;
 }
 
 tooltip {
     background-color: @base;
-    border: 2px solid @text;
+    border: 2px solid @lavender;
     font-size: 2px;
 	color: @text;
 }
@@ -49,7 +49,7 @@ window#waybar.empty #window {
 #custom-media,
 #window {
     margin: 6px 6px 6px 0px;
-    padding: 2px 8px;
+    padding: 4px 8px;
     border-radius: 4px;
 }
 
@@ -70,14 +70,14 @@ window#waybar.empty #window {
     padding: 4px 4px;
     color: @text;
     background-color: @base;
-    border: 2px solid @text;
+    border: 2px solid @lavender;
     border-radius: 4px;
     margin-right: 2px;
 }
 
 #workspaces button.active {
     color: @crust;
-    background-color: @text;
+    background-color: @lavender;
 }
 
 #workspaces button.urgent {
@@ -94,7 +94,7 @@ window#waybar.empty #window {
 
 #clock {
     background-color: @base;
-    border: 2px solid @text;
+    border: 2px solid @lavender;
     color: @text;
     margin-left: 5px;
 }
@@ -112,7 +112,7 @@ window#waybar.empty #window {
 #battery,
 #tray {
     background-color: @base;
-    border: 2px solid @text;
+    border: 2px solid @lavender;
     color: @text;
 }
 

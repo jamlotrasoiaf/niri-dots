@@ -5,7 +5,7 @@ font=IosevkaNerdFont 11
 
 background-color=#1e1e2e
 text-color=#cdd6f4
-border-color=#89dceb
+border-color=#b4befe
 progress-color=over #313244
 
 [urgency=high]
