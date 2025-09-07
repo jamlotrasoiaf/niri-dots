@@ -46,10 +46,15 @@ window#waybar.empty #window {
 
 #cava,
 #idle_inhibitor,
-#custom-media,
-#window {
+#custom-media {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
+    border-radius: 4px;
+}
+
+#window {
+    margin: 6px 6px 6px 0px;
+    padding: 0px 8px;
     border-radius: 4px;
 }
 
