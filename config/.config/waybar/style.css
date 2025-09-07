@@ -49,7 +49,7 @@ window#waybar.empty #window {
 #custom-media,
 #window {
     margin: 6px 6px 6px 0px;
-    padding: 4px 8px;
+    padding: 2px 8px;
     border-radius: 4px;
 }
 
@@ -67,7 +67,7 @@ window#waybar.empty #window {
     all: initial;
     min-width: 0;
     box-shadow: inset 0 -3px transparent;
-    padding: 4px 4px;
+    padding: 2px 4px;
     color: @text;
     background-color: @base;
     border: 2px solid @lavender;
