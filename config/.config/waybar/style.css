@@ -3,7 +3,7 @@
 * {
     border: none;
     min-height: 0;
-    font-family: "D2CodingLigature Nerd Font Mono";
+    font-family: "D2CodingLigature Nerd Font Propo";
     font-weight: 500;
     font-size: 14px;
     padding: 0;
@@ -29,6 +29,12 @@ tooltip label {
 window#waybar.empty #window {
     font-size: 0px;
     border: 0px;
+}
+
+#image {
+    margin: 6px 0px 6px 6px;
+    padding: 4px 4px;
+    border-radius: 4px;
 }
 
 #temperature,
@@ -104,6 +110,7 @@ window#waybar.empty #window {
     margin-left: 5px;
 }
 
+#image,
 #cava,
 #idle_inhibitor,
 #temperature,

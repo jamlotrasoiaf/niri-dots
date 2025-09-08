@@ -10,6 +10,7 @@
     "margin-left": 10,
     
     "modules-left": [
+        "image#me",
         "niri/workspaces",
         "cava"
     ],
@@ -22,6 +23,12 @@
         "idle_inhibitor",
         "custom/media"
     ],
+
+    "image#me": {
+        "path": "/home/sunny/.config/pictures/haruta.jpg",
+        "size": 16,
+        "on-click": "exec $HOME/.local/bin/logout-menu"
+    },
 
     "niri/workspaces": {
         "disable-scroll": true,
@@ -37,8 +44,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "󰻿",
-            "deactivated": "⏾",
+            "activated": "",
+            "deactivated": "",
         },
         "tooltip": false 
     },
@@ -52,7 +59,7 @@
             "firefox": "",
             "vlc": "󰕼",
 	        "mpv": "",
-    "default": "🎜"
+            "default": "🎜"
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
