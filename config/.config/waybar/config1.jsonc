@@ -4,7 +4,7 @@
     "spacing": 0,
     "height": 0,
 
-    "margin-top": 5,
+    "margin-top":0,
     "margin-right": 5,
     "margin-bottom": 0,
     "margin-left": 5,
@@ -29,7 +29,7 @@
 
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 15,
+        "icon-size": 25,
         "on-click": "activate"
     },
 
