@@ -25,10 +25,10 @@ my dots for niri.
 - **Overview Backdrop**: `swaybg`
 - **Idle Daemon**: `swayidle`
 - **Lockscreen**: `swaylock`
-- **Themes**: `catppuccin-gtk-theme-mocha kvantum-theme-catppuccin-git`
+- **Themes**: `catppuccin-gtk-theme-mocha kvantum-theme-catppuccin-git tela-circle-icon-theme-dracula`
 - **Cursor**: `catppuccin-cursors-mocha`
 - **Theming apps**: `nwg-look kvantum kvantum-qt5 qt5ct qt6ct`
 - **Qt Wayland Support**: `qt5-wayland qt6-wayland`
 - **XWayland**: `xwayland-satellite`
-- **Other Apps**: `discord spotify zapzap okular`
+- **Other Apps**: `discord spotify okular`
 - **Mods**: `vencord-installer-bin vencord-hook spicetify-cli spicetify-marketplace-bin`
