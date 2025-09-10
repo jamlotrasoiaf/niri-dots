@@ -1,6 +1,7 @@
 # Niri dots
 
 my dots for niri.
+
 use `stow` to symlink dots
  ---
 - **Compositor**: `niri`
