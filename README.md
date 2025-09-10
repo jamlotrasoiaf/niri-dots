@@ -31,4 +31,4 @@ my dots for niri.
 - **Qt Wayland Support**: `qt5-wayland qt6-wayland`
 - **XWayland**: `xwayland-satellite`
 - **Other Apps**: `discord spotify zapzap okular`
-- **Mods**: `equicord-installer-bin spicetify-cli spicetify-marketplace-bin`
+- **Mods**: `vencord-installer-bin vencord-hook spicetify-cli spicetify-marketplace-bin`
