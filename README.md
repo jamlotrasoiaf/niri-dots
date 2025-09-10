@@ -16,6 +16,7 @@ use `stow` to symlink dots
 - **File Manager**: `nemo-fileroller`
 - **Bluetooth**: `bluez bluez-utils blueman`
 - **XDG Desktop Portal**: `xdg-desktop-portal-gnome`
+- **Secrets**: `gnome-keyring`
 - **Polkit Agent**: `pantheon-polkit-agent`
 - **Audio Server**: `pipewire`
 - **Audio Control**: `pavucontrol`
