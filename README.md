@@ -10,9 +10,9 @@ my dots for niri.
 - **Bar**: `waybar-git`
 - **Fonts**: `ttf-d2coding-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji`
 - **Browser**: `firefox`
-- **File Manager**: `nemo`
+- **File Manager**: `nemo-fileroller`
 - **Bluetooth**: `bluez bluez-utils blueman`
-- **XDG Desktop Portal**: `xdg-desktop-portal-wlr xdg-desktop-portal-gtk`
+- **XDG Desktop Portal**: `xdg-desktop-portal-gnome`
 - **Polkit Agent**: `pantheon-polkit-agent`
 - **Audio Server**: `pipewire`
 - **Audio Control**: `pavucontrol`
