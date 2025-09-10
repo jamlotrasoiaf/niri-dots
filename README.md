@@ -8,7 +8,7 @@ my dots for niri.
 - **Notifications**: `mako`
 - **App Launcher, Logout Menu**: `fuzzel`
 - **Bar**: `waybar-git`
-- **Fonts**: `ttf-iosevka-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji`
+- **Fonts**: `ttf-d2coding-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji`
 - **Browser**: `firefox`
 - **File Manager**: `nemo`
 - **Bluetooth**: `bluez bluez-utils blueman`
