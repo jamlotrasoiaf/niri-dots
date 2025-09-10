@@ -5,9 +5,9 @@
     "height": 0,
     
     "margin-top": 0,
-    "margin-right": 10,
-    "margin-bottom": 10,
-    "margin-left": 10,
+    "margin-right": 5,
+    "margin-bottom": 5,
+    "margin-left": 5,
     
     "modules-left": [
         "image#me",
