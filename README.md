@@ -1,6 +1,7 @@
 # Niri dots
 
 my dots for niri.
+use `stow` to symlink dots
  ---
 - **Compositor**: `niri`
 - **Terminal**: `ghostty`
@@ -17,7 +18,7 @@ my dots for niri.
 - **Audio Server**: `pipewire`
 - **Audio Control**: `pavucontrol`
 - **Brightness Control**: `brightnessctl`
-- **Clipboard**: `cliphist imagemagick (for image support)`
+- **Clipboard**: `cliphist imagemagick` (for image support)
 - **Network Management**: `networkmanager networkmanager-dmenu-git`
 - **Shell**: `zsh`
 - **Shell Plugins**: `zsh-fast-syntax-highlighting zsh-autosuggestions zsh-theme-powerlevel10k-git`
@@ -30,5 +31,5 @@ my dots for niri.
 - **Theming apps**: `nwg-look kvantum kvantum-qt5 qt5ct qt6ct`
 - **Qt Wayland Support**: `qt5-wayland qt6-wayland`
 - **XWayland**: `xwayland-satellite`
-- **Other Apps**: `discord spotify okular`
+- **Other Apps**: `discord spotify-launcher okular`
 - **Mods**: `vencord-installer-bin vencord-hook spicetify-cli spicetify-marketplace-bin`
