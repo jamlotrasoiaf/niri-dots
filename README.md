@@ -22,7 +22,7 @@ use `stow` to symlink dots
 - **Polkit Agent**: `pantheon-polkit-agent`
 - **Audio Server**: `pipewire`
 - **Audio Control**: `pavucontrol`
-- **Audio effects**: `jamesdsp`
+- **Audio Effects**: `jamesdsp`
 - **Brightness Control**: `brightnessctl`
 - **Clipboard**: `cliphist imagemagick` (for image support)
 - **Network Management**: `networkmanager networkmanager-dmenu-git`
