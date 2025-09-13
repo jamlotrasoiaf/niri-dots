@@ -1,5 +1,6 @@
 default-timeout=10000
 font=D2CodingLigatureNerdFont 11
+border-size=1
 
 # Colors
 
