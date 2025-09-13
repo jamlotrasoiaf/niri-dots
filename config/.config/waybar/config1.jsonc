@@ -18,9 +18,9 @@
 
     "modules-right": [
         "tray",
-        "backlight",
         "battery",
         "network",
+        "backlight",
         "pulseaudio"
     ],
 
