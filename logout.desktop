@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Logout Menu
+Comment=Logout Menu
+GenericName=Logout Menu
+Exec=/home/sunny/.local/bin/logout-menu
+Type=Application
+Categories=Network;InstantMessaging;
