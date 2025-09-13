@@ -11,7 +11,7 @@
 }
 
 window#waybar {
-    background: transparent;
+    background: @crust;
     border: 0px solid @lavender;
     border-radius: 4px;
 }
@@ -113,7 +113,6 @@ window#waybar.empty #window {
     margin-left: 5px;
 }
 
-#taskbar,
 #image,
 #cava,
 #idle_inhibitor,
@@ -160,12 +159,12 @@ window#waybar.empty #window {
 #cpu.critical,
 #memory.critical {
     color: @red;
-    border: 1px solid @red;
+    border: 0px solid @red;
 }
 
 #battery.warning,
 #battery.critical,
 #battery.urgent {
     color: @red;
-    border: 1px solid @red;
+    border: 0px solid @red;
 }
