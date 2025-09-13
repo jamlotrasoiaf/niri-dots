@@ -12,13 +12,13 @@
 
 window#waybar {
     background: @crust;
-    border: 0px solid @lavender;
+    border: 0px;
     border-radius: 4px;
 }
 
 tooltip {
     background-color: @base;
-    border: 0px solid @lavender;
+    border: 0px;
     font-size: 2px;
 	color: @text;
 }
@@ -82,22 +82,22 @@ window#waybar.empty #window {
     min-width: 0;
     box-shadow: inset 0 -3px transparent;
     padding: 3px 5px;
-    color: @text;
-    background-color: @base;
-    border: 0px solid @lavender;
+    color: @lavender;
+    background-color: @crust;
+    border: 0px;
     border-radius: 4px;
     margin-right: 2px;
 }
 
 #workspaces button.active {
-    color: @crust;
-    background-color: @lavender;
+    color: @text;
+    background-color: @base;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
-	color: @crust;
-	border: 1px solid @red;
+    background-color: @base;
+	color: @red;
+	border: 0px;
 }
 
 #cava.silent,
@@ -109,7 +109,7 @@ window#waybar.empty #window {
 
 #clock {
     background-color: @base;
-    border: 0px solid @lavender;
+    border: 0px;
     color: @text;
     margin-left: 5px;
 }
@@ -128,7 +128,7 @@ window#waybar.empty #window {
 #battery,
 #tray {
     background-color: @base;
-    border: 0px solid @lavender;
+    border: 0px;
     color: @text;
 }
 
@@ -160,12 +160,12 @@ window#waybar.empty #window {
 #cpu.critical,
 #memory.critical {
     color: @red;
-    border: 0px solid @red;
+    border: 0px;
 }
 
 #battery.warning,
 #battery.critical,
 #battery.urgent {
     color: @red;
-    border: 0px solid @red;
+    border: 0px;
 }
