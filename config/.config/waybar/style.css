@@ -4,21 +4,21 @@
     border: none;
     min-height: 0;
     font-family: "D2CodingLigature Nerd Font Propo";
-    font-weight: 600;
+    font-weight: 500;
     font-size: 13px;
-    letter-spacing: -0.1em;
-    padding: 0;
+    letter-spacing: -1px;
+    padding: 0px;
 }
 
 window#waybar {
     background: @base;
-    border: 2px solid @lavender;
+    border: 1px solid @lavender;
     border-radius: 4px;
 }
 
 tooltip {
     background-color: @base;
-    border: 2px solid @lavender;
+    border: 1px solid @lavender;
     font-size: 2px;
 	color: @text;
 }
@@ -48,21 +48,21 @@ window#waybar.empty #window {
 #network,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
-    padding: 2px 6px;
+    padding: 3px 7px;
 	border-radius: 4px;
 }
 
 #cava,
 #idle_inhibitor {
     margin: 6px 6px 6px 0px;
-    padding: 2px 6px;
+    padding: 3px 7px;
     border-radius: 4px;
 }
 
 #window,
 #custom-media {
     margin: 6px 6px 6px 0px;
-    padding: 0px 6px;
+    padding: 0px 7px;
     border-radius: 4px;
 }
 
@@ -80,10 +80,10 @@ window#waybar.empty #window {
     all: initial;
     min-width: 0;
     box-shadow: inset 0 -3px transparent;
-    padding: 2px 4px;
+    padding: 3px 5px;
     color: @text;
     background-color: @base;
-    border: 2px solid @lavender;
+    border: 1px solid @lavender;
     border-radius: 4px;
     margin-right: 2px;
 }
@@ -96,7 +96,7 @@ window#waybar.empty #window {
 #workspaces button.urgent {
     background-color: @red;
 	color: @crust;
-	border: 2px solid @red;
+	border: 1px solid @red;
 }
 
 #cava.silent,
@@ -107,7 +107,7 @@ window#waybar.empty #window {
 
 #clock {
     background-color: @base;
-    border: 2px solid @lavender;
+    border: 1px solid @lavender;
     color: @text;
     margin-left: 5px;
 }
@@ -126,14 +126,14 @@ window#waybar.empty #window {
 #battery,
 #tray {
     background-color: @base;
-    border: 2px solid @lavender;
+    border: 1px solid @lavender;
     color: @text;
 }
 
 #cava {
     margin-left: 4px;
     padding-right: 0px;
-    padding-left: 6px;
+    padding-left: 7px;
 }
 
 #taskbar button {
@@ -158,12 +158,12 @@ window#waybar.empty #window {
 #cpu.critical,
 #memory.critical {
     color: @red;
-    border: 2px solid @red;
+    border: 1px solid @red;
 }
 
 #battery.warning,
 #battery.critical,
 #battery.urgent {
     color: @red;
-    border: 2px solid @red;
+    border: 1px solid @red;
 }
