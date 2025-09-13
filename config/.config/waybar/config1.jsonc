@@ -75,7 +75,8 @@
 	    "device": "intel_backlight",
 	    "format": "lux {percent}%",
         "on-scroll-up": "brightnessctl set +1%",
-        "on-scroll-down": "brightnessctl set 1%-"
+        "on-scroll-down": "brightnessctl set 1%-",
+        "tooltip": false
     },
 
     "battery": {
