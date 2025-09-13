@@ -11,14 +11,14 @@
 }
 
 window#waybar {
-    background: @base;
-    border: 1px solid @lavender;
+    background: transparent;
+    border: 0px solid @lavender;
     border-radius: 4px;
 }
 
 tooltip {
     background-color: @base;
-    border: 1px solid @lavender;
+    border: 0px solid @lavender;
     font-size: 2px;
 	color: @text;
 }
@@ -83,7 +83,7 @@ window#waybar.empty #window {
     padding: 3px 5px;
     color: @text;
     background-color: @base;
-    border: 1px solid @lavender;
+    border: 0px solid @lavender;
     border-radius: 4px;
     margin-right: 2px;
 }
@@ -101,17 +101,19 @@ window#waybar.empty #window {
 
 #cava.silent,
 #workspaces button.empty {
+    background-color: transparent;
     color: transparent;
     border: 0px;
 }
 
 #clock {
     background-color: @base;
-    border: 1px solid @lavender;
+    border: 0px solid @lavender;
     color: @text;
     margin-left: 5px;
 }
 
+#taskbar,
 #image,
 #cava,
 #idle_inhibitor,
@@ -126,7 +128,7 @@ window#waybar.empty #window {
 #battery,
 #tray {
     background-color: @base;
-    border: 1px solid @lavender;
+    border: 0px solid @lavender;
     color: @text;
 }
 

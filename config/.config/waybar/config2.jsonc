@@ -22,7 +22,7 @@
 
     "image#me": {
         "path": "/home/sunny/.config/pictures/haruta.jpg",
-        "size": 16,
+        "size": 20,
         "on-click": "exec fuzzel",
         "on-click-right": "exec $HOME/.local/bin/logout-menu"
     },
