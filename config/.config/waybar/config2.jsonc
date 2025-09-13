@@ -27,7 +27,8 @@
     "image#me": {
         "path": "/home/sunny/.config/pictures/haruta.jpg",
         "size": 16,
-        "on-click": "exec $HOME/.local/bin/logout-menu"
+        "on-click": "exec fuzzel",
+        "on-click-right": "exec $HOME/.local/bin/logout-menu"
     },
 
     "niri/workspaces": {
@@ -38,7 +39,7 @@
 
     "niri/window": {
 	    "format": "{title}",
-	    "max-length": 50
+	    "max-length": 40
     },
 
     "idle_inhibitor": {
@@ -53,7 +54,7 @@
     "custom/media": {
         "format": "{icon} {text}",
         "return-type": "json",
-        "max-length": 50,
+        "max-length": 40,
         "format-icons": {
             "spotify": "",
             "firefox": "",

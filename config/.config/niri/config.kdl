@@ -258,7 +258,7 @@ layout {
 
 spawn-sh-at-startup "mako"
 spawn-sh-at-startup "swww-daemon"
-spawn-sh-at-startup "swww img $HOME/.config/pictures/cat-vibin.png"
+spawn-sh-at-startup "sleep 2 && swww img $HOME/.config/pictures/cat-vibin.png"
 spawn-sh-at-startup "swaybg -m fill -i $HOME/.config/pictures/disco.png"
 spawn-sh-at-startup "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"
 spawn-sh-at-startup "wl-paste --watch cliphist store"

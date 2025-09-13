@@ -22,6 +22,7 @@
 
     "modules-right": [
         "tray",
+        "backlight",
         "battery",
         "network",
         "pulseaudio"
@@ -29,7 +30,7 @@
 
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 25,
+        "icon-size": 22,
         "on-click": "activate"
     },
 
@@ -69,6 +70,13 @@
         }
     },
 
+    "backlight": {
+	    "device": "intel_backlight",
+	    "format": "lux {percent}%",
+        "on-scroll-up": "brightnessctl set +1%",
+        "on-scroll-down": "brightnessctl set 1%-"
+    },
+
     "battery": {
         "format": "bat {capacity}%",
         "interval": 5,
@@ -80,8 +88,8 @@
     },
 
     "network": {
-        "format-wifi" : "wifi {bandwidthDownBits}",
-        "format-ethernet": "enth {bandwidthDownBits}",
+        "format-wifi" : "wifi {bandwidthDownBytes}",
+        "format-ethernet": "enth {bandwidthDownBytes}",
         "format-disconnected" : "no network",
         "on-click": "networkmanager_dmenu", // Run this once in terminal to generate config!
         "interval": 5,

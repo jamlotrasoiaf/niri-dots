@@ -4,8 +4,9 @@
     border: none;
     min-height: 0;
     font-family: "D2CodingLigature Nerd Font Propo";
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: -0.075em;
     padding: 0;
 }
 
@@ -33,7 +34,7 @@ window#waybar.empty #window {
 
 #image {
     margin: 6px 0px 6px 6px;
-    padding: 4px 4px;
+    padding: 2px 2px;
     border-radius: 4px;
 }
 
@@ -41,26 +42,27 @@ window#waybar.empty #window {
 #clock,
 #tray,
 #cpu,
+#backlight,
 #memory,
 #battery,
 #network,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
-    padding: 4px 8px;
+    padding: 2px 6px;
 	border-radius: 4px;
 }
 
 #cava,
 #idle_inhibitor {
     margin: 6px 6px 6px 0px;
-    padding: 2px 8px;
+    padding: 2px 6px;
     border-radius: 4px;
 }
 
 #window,
 #custom-media {
     margin: 6px 6px 6px 0px;
-    padding: 0px 8px;
+    padding: 0px 6px;
     border-radius: 4px;
 }
 
@@ -117,6 +119,7 @@ window#waybar.empty #window {
 #window,
 #custom-media,
 #cpu,
+#backlight,
 #memory,
 #network,
 #pulseaudio,
@@ -140,14 +143,15 @@ window#waybar.empty #window {
 }
 
 #network {
-	min-width: 100px;
+	min-width: 90px;
 }
 
 #cpu,
 #memory,
 #battery,
+#backlight,
 #pulseaudio {
-	min-width: 60px;
+	min-width: 50px;
 }
 
 #temperature.critical,
