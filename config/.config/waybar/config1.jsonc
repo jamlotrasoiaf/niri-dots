@@ -3,11 +3,7 @@
     "position": "bottom",
     "spacing": 0,
     "height": 0,
-
-    "margin-top":0,
-    "margin-right": 5,
-    "margin-bottom": 0,
-    "margin-left": 5,
+    "margin": 0,
 
     "modules-left": [
         "clock",

@@ -43,3 +43,4 @@
 # resize-overlay-duration = 4s 200ms
 theme = catppuccin-mocha
 font-family = D2CodingLigature Nerd Font Mono
+font-size = 11
