@@ -395,6 +395,7 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock"; }
     Mod+B hotkey-overlay-title="Restart bluetooth" { spawn-sh "systemctl --user stop pipewire wireplumber pipewire-pulse && sleep 1 && sudo systemctl restart bluetooth && sleep 1 && systemctl --user start pipewire wireplumber pipewire-pulse"; }
     Mod+Escape hotkey-overlay-title="Logout menu" { spawn-sh "$HOME/.local/bin/logout-menu"; }
+    Mod+P hotkey-overlay-title="Pick a color from screen" { spawn-sh r#"niri msg pick-color | awk '$1 == "Hex:" { printf "%s", $2 }' | wl-copy"#; }
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
     // Mod+T { spawn "bash" "-c" "notify-send hello && exec alacritty"; }
