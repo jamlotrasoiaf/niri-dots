@@ -10,7 +10,7 @@ case "$choice" in
     " Lock") swaylock ;; # or your locker, e.g. swaylock, hyprlock
     "󰍃 Logout") niri msg action quit --skip-confirmation ;; # or hyprctl dispatch exit
     "⏾ Suspend") systemctl suspend ;;
-    " Hibernate") systemctl suspend-then-hibernate ;;
+    " Hibernate") systemctl hibernate ;;
     " Reboot") systemctl reboot ;;
     " Shutdown") systemctl poweroff ;;
     *) exit 0 ;;
