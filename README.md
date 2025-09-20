@@ -27,7 +27,7 @@ use `stow` to symlink dots
 - **Clipboard**: `cliphist imagemagick` (for image support)
 - **Network Management**: `networkmanager`
 - **Shell**: `zsh`
-- **Shell Plugins**: `zsh-fast-syntax-highlighting zsh-autosuggestions zsh-theme-powerlevel10k-git`
+- **Shell Plugins**: `zsh-syntax-highlighting zsh-autosuggestions zsh-theme-powerlevel10k-git`
 - **Wallpaper**: `swww`
 - **Overview Backdrop**: `swaybg`
 - **Idle Daemon**: `swayidle`
