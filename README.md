@@ -6,9 +6,9 @@ use `stow` to symlink dots
 
  ---
 - **Compositor**: `niri`
-- **Terminal**: `ghostty`
+- **Terminal**: `kitty`
 - **Bootloader**: `grub`
-- **Display Manager**: `ly`
+- **Display Manager**: `greetd greetd-tuigreet`
 - **Text Editor**: `neovim`
 - **Notifications**: `mako`
 - **App Launcher, Logout Menu**: `fuzzel`
