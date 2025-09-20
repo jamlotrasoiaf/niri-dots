@@ -1,0 +1,247 @@
+[
+  {
+    "cava": {
+      "autosens": 1,
+      "bar_delimiter": 0,
+      "bars": 20,
+      "format-icons": [
+        "▁ ",
+        "▂ ",
+        "▃ ",
+        "▄ ",
+        "▅ ",
+        "▆ ",
+        "▇ ",
+        "█ "
+      ],
+      "framerate": 60,
+      "higher_cutoff_freq": 10000,
+      "input_delay": 2,
+      "lower_cutoff_freq": 50,
+      "method": "pipewire",
+      "monstercat": false,
+      "noise_reduction": 0.77,
+      "reverse": false,
+      "rotate": 90,
+      "sleep_timer": 5,
+      "source": "auto",
+      "stereo": true,
+      "waves": false
+    },
+    "height": 0,
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": ""
+      },
+      "tooltip": false
+    },
+    "image": {
+      "on-click": "exec fuzzel",
+      "on-click-right": "exec logout-menu",
+      "path": "/home/sunny/Pictures/walls/NixOS.png",
+      "size": 16
+    },
+    "layer": "top",
+    "modules-center": [
+      "cava"
+    ],
+    "modules-left": [
+      "image",
+      "niri/workspaces",
+      "wlr/taskbar"
+    ],
+    "modules-right": [
+      "idle_inhibitor",
+      "mpris"
+    ],
+    "mpris": {
+      "escape": true,
+      "format": "{player_icon} {dynamic}",
+      "max-length": 30,
+      "on-click": "playerctl play-pause",
+      "on-click-middle": "playerctl previous",
+      "on-click-right": "playerctl next",
+      "player-icons": {
+        "default": "🎜",
+        "firefox": "",
+        "mpv": "",
+        "spotify": "",
+        "vlc": "󰕼"
+      },
+      "rotate": 270,
+      "status-icons": {
+        "paused": "⏸"
+      },
+      "tooltip": false
+    },
+    "niri/workspaces": {
+      "all-outputs": true,
+      "disable-scroll": true,
+      "format": "{icon}",
+      "format-icons": {
+        "active": "",
+        "default": ""
+      },
+      "tooltip": false
+    },
+    "position": "right",
+    "spacing": 0,
+    "wlr/taskbar": {
+      "format": "{icon}",
+      "icon-size": 16,
+      "on-click": "activate"
+    }
+  },
+  {
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{icon}",
+      "format-icons": [
+        "󰛩",
+        "󱩎",
+        "󱩏",
+        "󱩐",
+        "󱩑",
+        "󱩒",
+        "󱩓",
+        "󱩔",
+        "󱩕",
+        "󱩖",
+        "󰛨"
+      ],
+      "on-scroll-down": "brightnessctl set 1%-",
+      "on-scroll-up": "brightnessctl set +1%",
+      "tooltip-format": "{percent}%"
+    },
+    "battery": {
+      "format": "{icon}",
+      "format-icons": [
+        "󰂎",
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ],
+      "interval": 5,
+      "states": {
+        "critical": 15,
+        "warning": 30
+      }
+    },
+    "clock": {
+      "calendar": {
+        "format": {
+          "days": "<span color='#ecc6d9'><b>{}</b></span>",
+          "months": "<span color='#ffead3'><b>{}</b></span>",
+          "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+          "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+          "weeks": "<span color='#99ffdd'><b>W{}</b></span>"
+        },
+        "mode": "year",
+        "mode-mon-col": 3,
+        "on-click-right": "mode",
+        "on-scroll": 1,
+        "weeks-pos": "right"
+      },
+      "format": "{:%H:%M}",
+      "format-alt": "{%a, %d %b %Y}",
+      "rotate": 90,
+      "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+      "format": "{icon}",
+      "format-icons": [
+        ""
+      ],
+      "interval": 2,
+      "states": {
+        "critical": 90
+      }
+    },
+    "height": 0,
+    "layer": "top",
+    "memory": {
+      "format": "{icon}",
+      "format-icons": [
+        ""
+      ],
+      "interval": 2,
+      "states": {
+        "critical": 80
+      }
+    },
+    "modules-center": [
+      "niri/window"
+    ],
+    "modules-left": [
+      "clock",
+      "cpu",
+      "memory",
+      "temperature"
+    ],
+    "modules-right": [
+      "tray",
+      "battery",
+      "network",
+      "backlight",
+      "pulseaudio"
+    ],
+    "network": {
+      "format-disconnected": "󰖪",
+      "format-ethernet": "󰈀",
+      "format-wifi": "󰖩",
+      "interval": 5,
+      "on-click": "kitty -e nmtui",
+      "tooltip-format": "{ifname} {bandwidthDownBytes}",
+      "tooltip-format-disconnected": "Disconnected",
+      "tooltip-format-ethernet": "{ifname} {bandwidthDownBytes} 󰈀",
+      "tooltip-format-wifi": "{essid} {bandwidthDownBytes} "
+    },
+    "niri/window": {
+      "format": "{title}",
+      "max-length": 30,
+      "rotate": 90
+    },
+    "position": "left",
+    "pulseaudio": {
+      "format": "{icon}",
+      "format-icons": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ],
+      "format-muted": "󰝟",
+      "max-volume": 150,
+      "nospacing": 1,
+      "on-click": "pavucontrol",
+      "scroll-step": 5
+    },
+    "spacing": 0,
+    "temperature": {
+      "critical-threshold": 90,
+      "format": "{icon}",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "interval": 5,
+      "warning-threshold": 75
+    },
+    "tray": {
+      "icon-size": 13,
+      "spacing": 10,
+      "tooltip": false
+    }
+  }
+]

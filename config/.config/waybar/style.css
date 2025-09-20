@@ -1,4 +1,32 @@
-@import "mocha.css";
+@import "/nix/store/hsj9jgx84vdb1ywhlzl55mg0pqjqy2gp-catppuccin-waybar-0-unstable-2024-07-13/mocha.css";
+
+@define-color rosewater #f5e0dc;
+@define-color flamingo #f2cdcd;
+@define-color pink #f5c2e7;
+@define-color mauve #cba6f7;
+@define-color red #f38ba8;
+@define-color maroon #eba0ac;
+@define-color peach #fab387;
+@define-color yellow #f9e2af;
+@define-color green #a6e3a1;
+@define-color teal #94e2d5;
+@define-color sky #89dceb;
+@define-color sapphire #74c7ec;
+@define-color blue #89b4fa;
+@define-color lavender #adb6f4;
+@define-color purple #9da5e1;
+@define-color text #cdd6f4;
+@define-color subtext1 #bac2de;
+@define-color subtext0 #a6adc8;
+@define-color overlay2 #9399b2;
+@define-color overlay1 #7f849c;
+@define-color overlay0 #6c7086;
+@define-color surface2 #585b70;
+@define-color surface1 #45475a;
+@define-color surface0 #313244;
+@define-color base #1e1e2e;
+@define-color mantle #181825;
+@define-color crust #11111b;
 
 * {
     border: none;
@@ -8,6 +36,7 @@
     font-size: 13px;
     letter-spacing: -1px;
     padding: 0px;
+    margin: 2px;
 }
 
 window#waybar {
@@ -20,11 +49,11 @@ tooltip {
     background-color: @base;
     border: 0px;
     font-size: 2px;
-	color: @text;
+    color: @text;
 }
 
 tooltip label {
-	margin: 8px;
+    margin: 2px;
 }
 
 window#waybar.empty #window {
@@ -34,46 +63,32 @@ window#waybar.empty #window {
 }
 
 #image {
-    margin: 6px 0px 6px 6px;
-    padding: 2px 2px;
     border-radius: 4px;
 }
 
-#temperature,
 #clock,
+#temperature,
+#cava,
 #tray,
 #cpu,
 #backlight,
 #memory,
 #battery,
 #network,
+#idle_inhibitor,
 #pulseaudio {
-    margin: 6px 6px 6px 0px;
-    padding: 3px 7px;
-	border-radius: 4px;
-}
-
-#cava,
-#idle_inhibitor {
-    margin: 6px 6px 6px 0px;
-    padding: 3px 7px;
+    padding: 4px 2px;
     border-radius: 4px;
 }
 
 #window,
-#custom-media {
-    margin: 6px 6px 6px 0px;
-    padding: 0px 7px;
+#mpris {
+    padding: 2px 2px;
     border-radius: 4px;
 }
 
-#taskbar {
-    margin: 6px 6px 6px 0px;
-    border-radius: 4px;
-}
-
+#taskbar,
 #workspaces {
-    margin: 6px 0px 6px 6px;
     border-radius: 4px;
 }
 
@@ -81,12 +96,11 @@ window#waybar.empty #window {
     all: initial;
     min-width: 0;
     box-shadow: inset 0 -3px transparent;
-    padding: 3px 5px;
     color: @lavender;
+    padding: 3px 2px;
     background-color: @crust;
     border: 0px;
     border-radius: 4px;
-    margin-right: 2px;
 }
 
 #workspaces button.active {
@@ -96,8 +110,8 @@ window#waybar.empty #window {
 
 #workspaces button.urgent {
     background-color: @base;
-	color: @red;
-	border: 0px;
+    color: @red;
+    border: 0px;
 }
 
 #cava.silent,
@@ -111,15 +125,15 @@ window#waybar.empty #window {
     background-color: @base;
     border: 0px;
     color: @text;
-    margin-left: 5px;
 }
 
 #image,
 #cava,
+#taskbar,
 #idle_inhibitor,
 #temperature,
 #window,
-#custom-media,
+#mpris,
 #cpu,
 #backlight,
 #memory,
@@ -133,27 +147,15 @@ window#waybar.empty #window {
 }
 
 #cava {
-    margin-left: 4px;
     padding-right: 0px;
-    padding-left: 7px;
+    padding-left: 6px;
 }
 
 #taskbar button {
-    padding: 0px;
-    padding-right: 2px;
-    padding-left: 2px;
-}
-
-#network {
-	min-width: 90px;
-}
-
-#cpu,
-#memory,
-#battery,
-#backlight,
-#pulseaudio {
-	min-width: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 #temperature.critical,
@@ -168,4 +170,12 @@ window#waybar.empty #window {
 #battery.urgent {
     color: @red;
     border: 0px;
+}
+
+#window {
+    min-width: 20px;
+}
+
+#cava {
+    min-width: 20px;
 }
