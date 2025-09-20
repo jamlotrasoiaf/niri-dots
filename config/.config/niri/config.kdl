@@ -258,11 +258,11 @@ layout {
 
 spawn-sh-at-startup "mako"
 spawn-sh-at-startup "swww-daemon"
-spawn-sh-at-startup "sleep 2 && swww img $HOME/Pictures/walls/basement.jpg"
+spawn-sh-at-startup "swww img $HOME/Pictures/walls/basement.jpg"
 spawn-sh-at-startup "swaybg -m fill -i $HOME/Pictures/walls/disco.png"
 spawn-sh-at-startup "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
-spawn-sh-at-startup "$HOME/.config/waybar/start.sh"
+spawn-sh-at-startup "waybar"
 spawn-sh-at-startup "/usr/lib/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
 spawn-sh-at-startup "jamesdsp --tray"
 
@@ -388,9 +388,9 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn-sh "ghostty"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn-sh "kitty"; }
     Mod+A hotkey-overlay-title="Run an Application: fuzzel" { spawn-sh "fuzzel"; }
-    Mod+Space hotkey-overlay-title="Reload waybar" { spawn-sh "$HOME/.config/waybar/start.sh"; }
+    Mod+Space hotkey-overlay-title="Reload waybar" { spawn-sh "killall waybar && waybar"; }
     Mod+X hotkey-overlay-title="Clipboard history" { spawn-sh "$HOME/.local/bin/cliphist-fuzzel-img"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock"; }
     Mod+B hotkey-overlay-title="Restart bluetooth" { spawn-sh "systemctl --user stop pipewire wireplumber pipewire-pulse && sleep 1 && sudo systemctl restart bluetooth && sleep 1 && systemctl --user start pipewire wireplumber pipewire-pulse"; }
