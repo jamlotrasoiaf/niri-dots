@@ -25,7 +25,7 @@ use `stow` to symlink dots
 - **Audio Effects**: `jamesdsp`
 - **Brightness Control**: `brightnessctl`
 - **Clipboard**: `cliphist imagemagick` (for image support)
-- **Network Management**: `networkmanager networkmanager-dmenu-git`
+- **Network Management**: `networkmanager`
 - **Shell**: `zsh`
 - **Shell Plugins**: `zsh-fast-syntax-highlighting zsh-autosuggestions zsh-theme-powerlevel10k-git`
 - **Wallpaper**: `swww`
