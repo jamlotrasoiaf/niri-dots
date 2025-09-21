@@ -9,7 +9,7 @@ use `stow` to symlink dots
 - **Terminal**: `kitty`
 - **Bootloader**: `grub`
 - **Display Manager**: `greetd greetd-tuigreet`
-- **Text Editor**: `neovim`
+- **Text Editor**: `kate`
 - **Notifications**: `mako`
 - **App Launcher, Logout Menu**: `fuzzel`
 - **Bar**: `waybar-git`
