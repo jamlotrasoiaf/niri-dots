@@ -8,7 +8,7 @@ use `stow` to symlink dots
 - **Compositor**: `niri`
 - **Terminal**: `kitty`
 - **Bootloader**: `grub`
-- **Display Manager**: `greetd greetd-tuigreet`
+- **Display Manager**: `sddm`
 - **Text Editor**: `kate`
 - **Notifications**: `mako`
 - **App Launcher, Logout Menu**: `fuzzel`
