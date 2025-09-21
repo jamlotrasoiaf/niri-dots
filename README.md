@@ -7,7 +7,7 @@ use `stow` to symlink dots
  ---
 - **Compositor**: `niri`
 - **Terminal**: `kitty`
-- **Bootloader**: `grub`
+- **Bootloader**: `systemd-boot`
 - **Display Manager**: `greetd greetd-tuigreet`
 - **Text Editor**: `kate`
 - **Notifications**: `mako`
