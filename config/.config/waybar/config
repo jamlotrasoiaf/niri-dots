@@ -3,7 +3,7 @@
     "cava": {
       "autosens": 1,
       "bar_delimiter": 0,
-      "bars": 20,
+      "bars": 15,
       "format-icons": [
         "▁ ",
         "▂ ",
@@ -77,8 +77,8 @@
       "disable-scroll": true,
       "format": "{icon}",
       "format-icons": {
-        "active": "",
-        "default": ""
+        "active": "",
+        "default": ""
       },
       "tooltip": false
     },
