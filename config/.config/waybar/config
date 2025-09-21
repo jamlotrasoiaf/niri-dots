@@ -29,14 +29,6 @@
       "waves": false
     },
     "height": 0,
-    "idle_inhibitor": {
-      "format": "{icon}",
-      "format-icons": {
-        "activated": "",
-        "deactivated": ""
-      },
-      "tooltip": false
-    },
     "image": {
       "on-click": "exec fuzzel",
       "on-click-right": "exec $HOME/.local/bin/logout-menu",
@@ -49,13 +41,17 @@
     ],
     "modules-left": [
       "image",
-      "niri/workspaces",
-      "wlr/taskbar"
+      "tray",
+      "niri/workspaces"
     ],
     "modules-right": [
-      "idle_inhibitor",
       "mpris"
     ],
+    "tray": {
+      "icon-size": 13,
+      "spacing": 10,
+      "tooltip": false
+    },
     "mpris": {
       "escape": true,
       "format": "{player_icon} {dynamic}",
@@ -88,11 +84,6 @@
     },
     "position": "right",
     "spacing": 0,
-    "wlr/taskbar": {
-      "format": "{icon}",
-      "icon-size": 16,
-      "on-click": "activate"
-    }
   },
   {
     "backlight": {
@@ -114,6 +105,14 @@
       "on-scroll-down": "brightnessctl set 1%-",
       "on-scroll-up": "brightnessctl set +1%",
       "tooltip-format": "{percent}%"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": ""
+      },
+      "tooltip": false
     },
     "battery": {
       "format": "{icon}",
@@ -188,7 +187,7 @@
       "temperature"
     ],
     "modules-right": [
-      "tray",
+      "idle_inhibitor",
       "battery",
       "network",
       "backlight",
@@ -207,7 +206,7 @@
     },
     "niri/window": {
       "format": "{title}",
-      "max-length": 30,
+      "max-length": 40,
       "rotate": 90
     },
     "position": "left",
@@ -238,10 +237,5 @@
       "interval": 5,
       "warning-threshold": 75
     },
-    "tray": {
-      "icon-size": 13,
-      "spacing": 10,
-      "tooltip": false
-    }
   }
 ]

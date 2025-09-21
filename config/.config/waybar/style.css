@@ -74,14 +74,10 @@ window#waybar.empty #window {
 #battery,
 #network,
 #idle_inhibitor,
-#pulseaudio {
-    padding: 4px 2px;
-    border-radius: 4px;
-}
-
+#pulseaudio,
 #window,
 #mpris {
-    padding: 2px 2px;
+    padding: 4px 2px;
     border-radius: 4px;
 }
 
